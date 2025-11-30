@@ -31,7 +31,7 @@ body {
 }
 
 .card {
-  max-width: 300px;
+  max-width: 320px;
   background-color: var(--white);
   padding: 16px 16px 40px 16px;
   border-radius: 20px;
@@ -50,6 +50,11 @@ body {
   font-size: 20px;
   margin: 15px 0;
   font-weight: 700;
+}
+
+.card .image {
+  width: 288px;
+  height: 288px;
 }
 
 .card .image img {
