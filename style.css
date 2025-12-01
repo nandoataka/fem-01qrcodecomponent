@@ -17,7 +17,7 @@
 
 html {
   background-color: var(--slate-300);
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
   font-family: var(--outfit);
 }
@@ -30,13 +30,26 @@ body {
   align-items: center;
 }
 
+img {
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
 .card {
-  max-width: 320px;
+  max-width: min(
+    90vw,
+    320px
+  ); /* Max width is 400px or 90% of viewport width, whichever is smaller */
+
   background-color: var(--white);
-  padding: 16px 16px 40px 16px;
-  border-radius: 20px;
+  padding: 1rem 1rem 2.5rem 1rem;
+  border-radius: 1.25rem;
   text-align: center;
-  box-shadow: 3px 3px 20px 0 var(--slate-500);
+  box-shadow: 0.1875rem 0.1875rem 1.25rem 0 var(--slate-500);
+  margin: 0 auto; /* Center card horizontally */
 }
 
 .card .main-content {
@@ -58,8 +71,4 @@ body {
 
 .card .image img {
   border-radius: 10px;
-}
-
-img {
-  width: 100%;
 }
