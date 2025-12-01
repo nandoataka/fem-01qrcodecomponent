@@ -34,6 +34,10 @@ img {
   width: 100%;
 }
 
+.title {
+  margin-bottom: 10px;
+}
+
 .card {
   max-width: min(
     90vw,
